@@ -1,0 +1,211 @@
+html{
+  height: 100%; /* Ensure the background covers the full height of the page */
+  margin: 100;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%; /* Ensure the body also covers the full height */
+  margin: 0;
+  padding: 0;
+  background-image: url('http://getwallpapers.com/wallpaper/full/c/e/4/428424.jpg'); 
+  background-attachment: fixed;
+  background-size: cover; /* Ensures the background image covers the entire page */
+  background-position: center; /* Centers the background image */
+  font-family: Arial, sans-serif;
+  color: #f1ecec; 
+}
+
+.about {
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(82, 70, 55, 0.8);
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+.milestones {
+  margin-bottom: 40px;
+}
+
+.milestones h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.milestones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for more space between milestone boxes */
+}
+
+.milestone {
+  display: flex;
+  background: rgba(153, 77, 36, 0.625);
+  padding: 20px; /* Increased padding for more space inside boxes */
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box-shadow for better separation */
+}
+
+.milestone-date {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cacf81;
+  width: 100px; /* Increased width for more space beside the 2021 box */
+  text-align: center;
+  margin-right: 10px; /* Reduced margin for better spacing */
+}
+
+.milestone-content {
+  flex: 1;
+}
+
+.milestone-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.team-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Increased gap for more space between sections */
+  justify-content: space-between;
+}
+
+.team, .values {
+  background: rgba(153, 77, 36, 0.625);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box-shadow for better separation */
+  flex: 1;
+  min-width: calc(50% - 50px); /* Ensures that the sections are responsive and have some space */
+}
+
+.team h2, .values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.values ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+}
+
+.contact-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Increased gap for more space between contact and social sections */
+  justify-content: space-between;
+}
+
+.contact, .social-media {
+  background: rgba(129, 58, 19, 0.625);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box-shadow for better separation */
+  flex: 1;
+  min-width: calc(50% - 50px); /* Ensures that the sections are responsive and have some space */
+}
+
+.contact h2, .social-media h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjusted gap for better spacing between icons */
+}
+
+.social-media-icons a {
+  display: inline-block;
+  width: 40px; /* Adjusted size for better visibility */
+  height: 40px; /* Adjusted size for better visibility */
+  background-size: cover;
+}
+
+.social-media-icons .facebook {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+}
+
+.social-media-icons .twitter {
+  background-image: url('https://tse2.mm.bing.net/th?id=OIP.PVCiZsAUVTjA2oed7SyihwHaHk&pid=Api&P=0&h=180');
+}
+
+.social-media-icons .linkedin {
+  background-image: url('https://tse3.mm.bing.net/th?id=OIP.GkLB-mM207aOg96ZtU7BawHaHa&pid=Api&P=0&w=300&h=300');
+}
+
+.social-media-icons .instagram {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+}
+
+@media (min-width: 768px) {
+  .milestones-container {
+    flex-direction: row; /* Adjusts layout for larger screens */
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-values {
+    flex-wrap: nowrap;
+  }
+  
+  .contact-social {
+    flex-wrap: nowrap;
+  }
+}

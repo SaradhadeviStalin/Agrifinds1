@@ -1,0 +1,308 @@
+/* styles.css */
+
+/* General styles for the entire application */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #f4f4f4; /* Fallback background color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Full-screen background for specific pages */
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Make sure it's behind other content */
+}
+
+/* Main content area */
+main {
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background: #533206;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 80px;
+}
+
+header nav a {
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ff8000;
+}
+
+/* Footer styles */
+footer {
+  background: #533206;
+  color: white;
+  text-align: center;
+  padding: 1px 2px;
+  position: fixed;
+  bottom: 1;
+  width: 100%;
+}
+
+/* Home Page */
+.home {
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+
+.home .hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home .features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.home .feature {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+
+.about .timeline {
+  margin-top: 20px;
+}
+
+.about .timeline-item {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Schemes Page */
+.schemes {
+  position: relative;
+  color: white;
+  padding: 20px;
+  background-image: url('https://example.com/schemes-background.jpg'); /* Add the path to your image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.scheme {
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.products {
+  position: relative;
+  color: #ffffff;
+  padding: 20px;
+  background-color: #f4f4f4;
+  background-image: url('https://tse2.mm.bing.net/th?id=OIP.Rs_o2ounlxkz8CKaHDOZSQHaEK&pid=Api&P=0&h=180'); /* Add the path to your image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.products h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  color: #d2c4b2;
+}
+
+.product-card p {
+  color: #f5eaea;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #925506;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #a67341;
+}
+
+/* Payment Page */
+.payment {
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+
+.payment form {
+  background: rgba(239, 231, 231, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Login Form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://wallpapercave.com/wp/wp1987046.jpg'); /* Add the path to your image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.3); /* Increased transparency to 30% opacity */
+  padding: 20px; /* Adjusted padding */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  border: 2px solid #533206; /* Slightly thinner border */
+}
+
+.login-form h1 {
+  margin-bottom: 15px;
+  color: #4b2e08;
+}
+
+.login-form .error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 90%;
+  padding: 7px;
+  margin-bottom: 20px; /* Adjusted margin */
+  border: 1px solid #782d2d;
+  border-radius: 15px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px; /* Adjusted padding */
+  background: #c25410b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #7b432577;
+}
+/* Register Form */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://wallpapercave.com/wp/wp1987046.jpg'); /* Add the path to your image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.register-form {
+  background: rgba(255, 255, 255, 0.3); /* Increased transparency to 30% opacity */
+  padding: 50px; /* Adjusted padding */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid #533206; /* Slightly thinner border */
+}
+
+.register-form h1 {
+  margin-bottom: 20px;
+  color: #533206;
+}
+
+.register-form .error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 30px; /* Adjusted margin */
+  border: 2px solid #782d2d;
+  border-radius: 10px;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px; /* Adjusted padding */
+  background: #bd520fb3;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-form button:hover {
+  background: #aa411e77;
+}

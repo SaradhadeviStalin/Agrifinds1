@@ -1,0 +1,110 @@
+/* General styles for the entire application */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Full-screen background */
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Make sure it's behind other content */
+}
+
+/* Home Page */
+.home {
+  position: relative;
+  color: white;
+  padding: 20px;
+  ;
+}
+
+.home .hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home .features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.home .feature {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+
+
+/* Products Page */
+.products {
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Payment Page */
+.payment {
+  position: relative;
+  color: rgb(252, 243, 243);
+  padding: 20px;
+}
+
+.payment form {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Login and Register Forms
+.login-form, .register-form {
+  position: relative;
+  color: white;
+  padding: 20px;
+} */
+
+form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.error {
+  color: rgba(130, 13, 13, 0.344);
+}

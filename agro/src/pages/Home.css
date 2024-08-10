@@ -1,0 +1,67 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  background-image: url('https://wallpapercave.com/wp/wp3644160.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  color: rgb(250, 242, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+  overflow-y: auto; /* Allow scrolling */
+}
+
+.hero {
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem; /* Make the Welcome text larger */
+  margin-bottom: 10px;
+  background: rgba(181, 64, 64, 0.5); /* Optional overlay for better text readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.description-box {
+  background: rgba(59, 40, 40, 0.5); /* Overlay for better text readability */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 40px; /* Provide more space below description */
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.feature {
+  background: rgba(253, 253, 253, 0.5); /* Optional overlay for better text readability */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  flex: 1 1 30%; /* Flex properties for responsiveness */
+  max-width: 300px;
+  box-sizing: border-box; /* Include padding in the element's width */
+}

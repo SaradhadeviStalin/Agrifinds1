@@ -1,0 +1,95 @@
+/* src/Cart.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background for contrast */
+  font-family: 'Arial', sans-serif;
+}
+
+.cart-container {
+  max-width: 1000px;
+  width: 90%; /* Adjust width as needed */
+  margin: 40px auto; /* Center horizontally with auto margins */
+  padding: 40px;
+  background-color: #fbfbfb; /* Solid white background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(53, 48, 48, 0.1); /* Shadow for depth */
+}
+
+.cart-container h1 {
+  text-align: center;
+  color: #333; /* Header color */
+  margin-bottom: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.cart-table th, .cart-table td {
+  border: 2px solid #8c8080;
+  padding: 12px;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #fffefe;
+  color: #333; /* Header text color */
+}
+
+.cart-table td {
+  color: #000; /* Ensure all table data text, including prices, is black */
+}
+
+.cart-table td input {
+  width: 60px;
+  text-align: center;
+  padding: 4px;
+  border: 1px solid #7b7575;
+  border-radius: 4px;
+}
+
+.cart-table button {
+  background-color: #c73535d7;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.cart-table button:hover {
+  background-color: #f6240c;
+}
+
+.cart-summary {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.cart-summary p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000; /* Ensure summary text color is black */
+}
+
+.checkout-button {
+  background-color: #cc402e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #e42b12;
+}
